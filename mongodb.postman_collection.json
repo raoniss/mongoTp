@@ -1,0 +1,885 @@
+{
+	"info": {
+		"_postman_id": "01391ea5-fb63-449d-bd5c-079e61c5576e",
+		"name": "mongodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22624800"
+	},
+	"item": [
+		{
+			"name": "Livre",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteurs",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/livre/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livre",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "new livre",
+									"type": "text"
+								},
+								{
+									"key": "auteurs",
+									"value": "Anissko",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "romance",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/livre/65ecb38043399ac722bf590f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livre",
+								"65ecb38043399ac722bf590f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/livre/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livre",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByGender",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/livre/genre/fiction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livre",
+								"genre",
+								"fiction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByAutor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/livre/auteur/Anissko",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livre",
+								"auteur",
+								"Anissko"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOne",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/livre/65ecb74baa7058dc3d17f5b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livre",
+								"65ecb74baa7058dc3d17f5b2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/livre/65ecb74baa7058dc3d17f5b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livre",
+								"65ecb74baa7058dc3d17f5b2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auteur",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nom",
+									"value": "Mamadou aniss",
+									"type": "text"
+								},
+								{
+									"key": "date_de_naissance",
+									"value": "03/10/2001",
+									"type": "text"
+								},
+								{
+									"key": "nationalité",
+									"value": "togolais",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auteur/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auteur",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nom",
+									"value": "Mamadou anos",
+									"type": "text"
+								},
+								{
+									"key": "date_de_naissance",
+									"value": "03/10/2011",
+									"type": "text"
+								},
+								{
+									"key": "nationalité",
+									"value": "ghana",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auteur/65ecd41b53a21259cd34cd44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auteur",
+								"65ecd41b53a21259cd34cd44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auteur/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auteur",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOne",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auteur/65ecd41b53a21259cd34cd44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auteur",
+								"65ecd41b53a21259cd34cd44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auteur/65ecd41b53a21259cd34cd44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auteur",
+								"65ecd41b53a21259cd34cd44"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "loaning",
+			"item": [
+				{
+					"name": "getAllByUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/loaning/user/MAMADOU Aniss",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loaning",
+								"user",
+								"MAMADOU Aniss"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "livre",
+									"value": "65ecb03f759dcc91d846f70f",
+									"type": "text"
+								},
+								{
+									"key": "utilisateur",
+									"value": "MAMADOU Aniss",
+									"type": "text"
+								},
+								{
+									"key": "date_emprunt",
+									"value": "03/10/2001",
+									"type": "text"
+								},
+								{
+									"key": "date_de_retour_prévue",
+									"value": "03/10/2001",
+									"type": "text"
+								},
+								{
+									"key": "date_de_retour_effective",
+									"value": "03/10/2001",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/loaning/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loaning",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/loaning/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"loaning",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOne",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auteur/65ecd41b53a21259cd34cd44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auteur",
+								"65ecd41b53a21259cd34cd44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titre",
+									"value": "blalba",
+									"type": "text"
+								},
+								{
+									"key": "auteur",
+									"value": "Aniss",
+									"type": "text"
+								},
+								{
+									"key": "année_de_publication",
+									"value": "2004",
+									"type": "text"
+								},
+								{
+									"key": "genres",
+									"value": "fiction",
+									"type": "text"
+								},
+								{
+									"key": "quantité_disponible",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auteur/65ecd41b53a21259cd34cd44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auteur",
+								"65ecd41b53a21259cd34cd44"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
